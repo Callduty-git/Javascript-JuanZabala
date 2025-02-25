@@ -54,7 +54,7 @@ let cuadrado2 = numero2 * numero2;
 let cuadrado3 = numero3 * numero3;
 alert("El cuadrado del primer número es: " + cuadrado1);
 alert("El cuadrado del segundo número es: " + cuadrado2);
-alert("El cuadrado del tercer número es: " + cuadrado3);*/
+alert("El cuadrado del tercer número es: " + cuadrado3);
 
 /* En un hospital existen tres áreas: Ginecología, Pediatría, Traumatología. El
 presupuesto anual del hospital se reparte conforme a la sig. tabla:
@@ -91,7 +91,7 @@ alert("El porcentaje de inversión de la tercera persona es: " + porcentaje3 + "
 /*Realizar una calculadora con las operaciones básicas suma, división,
 multiplicación y división.*/
 
-let num1 = parseFloat(prompt("Introduce el primer numero:"));
+/*let num1 = parseFloat(prompt("Introduce el primer numero:"));
 let num2 = parseFloat(prompt("Introduce el segundo numero:"));
 let sum = num1 + num2;
 let difference = num1 - num2;
@@ -100,6 +100,106 @@ let quotient = num1 / num2;
 alert("Suma: " + sum);
 alert("Resta: " + difference);
 alert("Multiplicación: " + product);
-alert("División: " + quotient);
+alert("División: " + quotient);*/
+
+//estructuras de control
+
+//ejemplo 1- Declarar dos variables una que sea el nombre y otra que sea la edad y mostrar si us mayor de edad o no
+
+/*let nombre = prompt("Introduce tu nombre:");
+let edad = parseInt(prompt("Introduce tu edad"));
+if (edad >= 18){
+    alert("Hola " + nombre + " eres mayor de edad");
+}else{
+    alert("Hola " + nombre + " eres menor de edad");
+}*/
+
+/*let nombre = prompt("Introduce tu nombre:");
+let edad = parseInt(prompt("Introduce tu edad"));
+if (edad >= 1 && edad <= 18){
+    alert("Hola " + nombre + " eres Joven");}
+    else if(edad >= 19 && edad <= 40){
+        alert("Hola " + nombre + " eres Adulto");
+    }else if (edad >= 41 && edad <= 60){
+        alert("Hola " + nombre + " eres madura");
+    }
+    else{
+        alert("Hola " + nombre + " eres anciano");
+    }*/
+   /*let cuentaatras = parseInt(prompt("intoduce el numero para contar atras"))
+   while (cuentaatras > 0){
+    document.write(cuentaatras, "<br>")
+cuentaatras = cuentaatras -1}*/
+
+    
+
+/*let respuesta
+
+do {
+  respuesta = confirm("¿Te gusta el sena???????");
+} while (respuesta)*/
+ 
+/*escribir 5 edades y definir si son mayores de edad o no*/
+/*
+let cotador = 0;
+let respuesta;
+do{
+
+    let edad1 = parseInt(prompt("Introduce la edad de la primera persona:"));
+    if (edad1 >= 18)
+    alert("eres mayor de edad")
+    else{
+        alert("eres menor de edad")
+    }
+    let edad2 = parseInt(prompt("Introduce la edad de la segunda persona:"));
+    if (edad2 >= 18)
+        alert("eres mayor de edad")
+    else{
+        alert("eres menor de edad")
+    }
+    let edad3 = parseInt(prompt("Introduce la edad de la tercera persona:"));
+    if (edad3 >= 18)
+        alert("eres mayor de edad")
+    else{
+        alert("eres menor de edad")
+    }
+    let edad4 = parseInt(prompt("Introduce la edad de la cuarta persona:"));
+    if (edad4 >= 18)
+        alert("eres mayor de edad")
+    else{
+        alert("eres menor de edad")
+    }
+    let edad5 = parseInt(prompt("Introduce la edad de la quinta persona:"));
+    if (edad5 >= 18)
+        alert("eres mayor de edad")
+    else{
+        alert("eres menor de edad")
+    }
+}while (respuesta)*/
 
 
+/*let numpersonas = 0;
+do {
+    let nombre = prompt("Introduce el nombre de la persona:");
+    let edad = parseInt(prompt("Introduce la edad de la persona:"));
+    if (edad >= 18){
+        alert (nombre + " es mayor de edad.");
+    }else {
+        alert(nombre + " es menor de edad.");
+    }
+    numpersonas++;
+}while (numpersonas < 5)*/
+
+/*for (let i = 10; i >= 0; i--) {
+    if (i === 0) {
+      console.log('¡Despegue 🚀!')
+    } else {
+      console.log('Faltan ' + i + ' segundos')
+    }
+  }*/
+
+ let numero = parseInt(prompt("Ingresa un numero"))
+ for (let i = 1; i <= 10; i++){
+    let resultado = numero * i;
+    document.write(numero + " x " + i + " = " + resultado + "<br>");
+ }
