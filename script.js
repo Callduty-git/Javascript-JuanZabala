@@ -198,8 +198,295 @@ do {
     }
   }*/
 
- let numero = parseInt(prompt("Ingresa un numero"))
+ /*let numero = parseInt(prompt("Ingresa un numero"))
  for (let i = 1; i <= 10; i++){
     let resultado = numero * i;
     document.write(numero + " x " + i + " = " + resultado + "<br>");
- }
+ }*/
+/*imprime por consola u mensage si el usuario y contraseña coinciden con unos establesidos*/
+/*let usuario="jupazago"
+let contraseña="1234"
+let usuario1= prompt("Escribe tu usuario")
+let contraseña1= prompt("Escribe tu contraseña")
+
+if(usuario==usuario1 && contraseña==contraseña1){
+        alert ( "Bienvenido")
+    }
+else{
+    alert ("El usuario o la contraseña son incorrectos")
+}*/
+/*diseñar un programa que determine que dia de la semana es hoy, utilizando la funcion promt*/
+
+/*const dia= new Date().getDay()
+
+switch (dia) {
+  case 1:
+    console.log("¡Hoy es lunes! 😢")
+    break
+    case 2:
+    console.log("¡Hoy es martes! 🥱")
+    break
+    case 3:
+    console.log("¡Hoy es miercoles! 😔")
+    break
+    case 4:
+    console.log("¡Hoy es jueves! 😴")
+    break
+    case 5:
+    console.log("¡Hoy es viernes! 🫠")
+    break
+    case 6:
+    console.log("¡Hoy es sabado! 🤠")
+    break
+    case 0:
+    console.log("¡Hoy es domingo! 🫣")
+    break
+    default:
+        console.log("Se acerca el fin de! 🚀")
+        break
+    }*/
+       /* let nombre = prompt("Introduce tu nombre:");
+        let edad = parseInt(prompt("Introduce tu edad"));   
+        switch(true) {
+          case (edad >= 1 && edad <= 18):
+            console.log("Hola " + nombre + " eres Joven");
+            break;
+          case (edad >= 19 && edad <= 40):
+            console.log("Hola " + nombre + " eres Adulto");
+            break;
+          case (edad >= 41 && edad <= 60):
+            console.log("Hola " + nombre + " eres madura");
+            break;
+          default:
+            console.log("Hola " + nombre + " eres anciano");
+        }*/
+            /*Ejercicio 2 Dada las 3 calificaciones que el estudiante obtuvo en un curso
+            a) Determinar su promedio
+            b) Indicar si el estudiante aprobó o no aprobó el curso.
+            Las notas deben ser de 1 a 10 y aprueba con un promedio mayor de 6*/
+            // Paso 1: Solicitar las calificaciones
+/*let nota1 = parseFloat(prompt("Ingresa la primera calificación (1-10):"));
+let nota2 = parseFloat(prompt("Ingresa la segunda calificación (1-10):"));
+let nota3 = parseFloat(prompt("Ingresa la tercera calificación (1-10):"));
+
+// Paso 2: Calcular el promedio
+let promedio = (nota1 + nota2 + nota3) / 3;
+
+// Paso 3: Determinar si aprobó o no
+let resultado = (promedio > 6) ? "Aprobó" : "No aprobó";
+
+// Paso 4: Mostrar los resultados
+alert("Promedio: " + promedio.toFixed(2));
+alert("Resultado: " + resultado);*/
+
+/* Ejemplo 4 Leer dos números y los imprima en forma ascendente.*/
+    // Paso 1: Leer los dos números
+/*let num1 = parseFloat(prompt("Ingresa el primer número:"));
+let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+
+// Paso 2: Comparar los dos números y mostrarlos en orden ascendente
+if (num1 > num2) {
+    alert("Los números en orden ascendente son: " + num2 + ", " + num1);
+} else {
+    alert("Los números en orden ascendente son: " + num1 + ", " + num2);
+}*/
+/*Ejercicio 6Dado un numero entre 1 y 7 escriba su correspondiente día de la semana
+así:
+DIA1 = LUNES
+DIA2 = MARTES
+DIA3 = MIECOLES
+DIA4 = JUEVES
+DIA5 = VIERNES
+DIA6 = SABADO
+DIA7 = DOMINGO
+SI se escribe otro número diferentes debe salir el mensaje: ESCRIBIO UN
+NUMERO FUERA DEL RANGO. ESCRIBA UN NÚMERO ENTRE 1 Y 7 */
+// Paso 1: Leer el número
+/*let dia = parseInt(prompt("Ingresa un número entre 1 y 7:"));
+
+// Paso 2: Determinar el día correspondiente
+switch(dia) {
+    case 1:
+        alert("LUNES");
+        break;
+    case 2:
+        alert("MARTES");
+        break;
+    case 3:
+        alert("MIÉRCOLES");
+        break;
+    case 4:
+        alert("JUEVES");
+        break;
+    case 5:
+        alert("VIERNES");
+        break;
+    case 6:
+        alert("SÁBADO");
+        break;
+    case 7:
+        alert("DOMINGO");
+        break;
+    default:
+        alert("ESCRIBIÓ UN NÚMERO FUERA DEL RANGO. ESCRIBA UN NÚMERO ENTRE 1 Y 7");
+        break;
+}*/
+            
+/* Ejercicio 8 Un obrero necesita calcular su salario semanal, el cual se obtiene de la sig.
+manera:
+a) Si trabaja 40 horas o menos se le paga $16000 por hora
+b) Si trabaja más de 40 horas se le paga $20000 por hora*/
+// Paso 1: Leer la cantidad de horas trabajadas
+/*let horasTrabajadas = parseInt(prompt("Ingresa el número de horas trabajadas en la semana:"));
+
+// Paso 2: Calcular el salario
+let salario;
+if (horasTrabajadas <= 40) {
+    salario = horasTrabajadas * 16000; // Pago por hora si trabaja 40 horas o menos
+} else {
+    salario = (40 * 16000) + ((horasTrabajadas - 40) * 20000); // Pago por hora si trabaja más de 40 horas
+}
+
+// Paso 3: Mostrar el salario calculado
+alert("El salario semanal del obrero es: $" + salario);*/
+/* Ejercicio 10 Hacer un programa que calcule el total a pagar por la compra de camisas. Si
+se compran tres camisas o mas se aplica un descuento del 20% sobre el total
+de la compra y si son menos de tres camisas un descuento del 10%.*/
+// Paso 1: Leer el precio de la camisa y la cantidad de camisas
+/*let precioCamisa = parseFloat(prompt("Ingresa el precio de una camisa:"));
+let cantidadCamisas = parseInt(prompt("Ingresa la cantidad de camisas que deseas comprar:"));
+
+// Paso 2: Calcular el total de la compra sin descuento
+let totalCompra = precioCamisa * cantidadCamisas;
+
+// Paso 3: Aplicar el descuento según la cantidad de camisas
+let descuento;
+if (cantidadCamisas >= 3) {
+    descuento = totalCompra * 0.20; // Descuento del 20% si se compran 3 o más camisas
+} else {
+    descuento = totalCompra * 0.10; // Descuento del 10% si se compran menos de 3 camisas
+}
+
+// Paso 4: Calcular el total a pagar después del descuento
+let totalPagar = totalCompra - descuento;
+
+// Paso 5: Mostrar el total a pagar
+alert("El total a pagar por la compra de camisas es: $" + totalPagar.toFixed(2));
+*/
+/*Ejercicio 12 Realizar una calculadora con las operaciones básicas suma, división,
+multiplicación y división. */
+// Paso 1: Mostrar las opciones de operaciones al usuario
+/*let operacion = prompt("Elige la operación que deseas realizar:\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir");
+
+// Paso 2: Leer los números para realizar la operación
+let num1 = parseFloat(prompt("Ingresa el primer número:"));
+let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+
+// Paso 3: Realizar la operación seleccionada
+let resultado;
+
+switch (operacion) {
+    case "1":
+        resultado = num1 + num2;
+        alert("El resultado de la suma es: " + resultado);
+        break;
+    case "2":
+        resultado = num1 - num2;
+        alert("El resultado de la resta es: " + resultado);
+        break;
+    case "3":
+        resultado = num1 * num2;
+        alert("El resultado de la multiplicación es: " + resultado);
+        break;
+    case "4":
+        // Verificar que no se divida entre 0
+        if (num2 === 0) {
+            alert("Error: No se puede dividir entre cero.");
+        } else {
+            resultado = num1 / num2;
+            alert("El resultado de la división es: " + resultado);
+        }
+        break;
+    default:
+        alert("Opción no válida. Por favor elige un número entre 1 y 4.");
+        break;
+}*/
+/*Ejercicio 14 Crea un programa que calcule el índice de masa corporal (IMC) de una
+persona y muestre un mensaje indicando si la persona está bajo peso, peso
+normal, sobrepeso u obesidad.*/
+// Paso 1: Leer el peso y la altura de la persona
+/*let peso = parseFloat(prompt("Ingresa tu peso en kilogramos (kg):"));
+let altura = parseFloat(prompt("Ingresa tu altura en metros (m):"));
+
+// Paso 2: Calcular el Índice de Masa Corporal (IMC)
+let imc = peso / (altura * altura);
+
+// Paso 3: Determinar la categoría del IMC
+let categoria;
+if (imc < 18.5) {
+    categoria = "Bajo peso";
+} else if (imc >= 18.5 && imc < 24.9) {
+    categoria = "Peso normal";
+} else if (imc >= 25 && imc < 29.9) {
+    categoria = "Sobrepeso";
+} else {
+    categoria = "Obesidad";
+}
+
+// Paso 4: Mostrar el resultado
+alert("Tu IMC es: " + imc.toFixed(2) + "\nCategoría: " + categoria);*/
+
+/* Ejercicio 16 Desarrolla un programa que solicite la nota final de la materia de algoritmos
+y generar el criterio de la nota, de acuerdo a la siguiente tabla.*/
+// Paso 1: Solicitar la nota final de la materia de algoritmos
+/*let nota = parseFloat(prompt("Ingresa la nota final de la materia de algoritmos:"));
+
+// Paso 2: Determinar el desempeño según la escala institucional
+let criterio;
+
+if (nota >= 4.5 && nota <= 5.0) {
+    criterio = "Desempeño Superior";
+} else if (nota >= 3.9 && nota < 4.5) {
+    criterio = "Desempeño Alto";
+} else if (nota >= 3.4 && nota < 3.9) {
+    criterio = "Desempeño Básico";
+} else if (nota >= 1.0 && nota < 3.4) {
+    criterio = "Desempeño Bajo";
+} else {
+    criterio = "Nota fuera de rango. Ingresa una nota entre 1.0 y 5.0.";
+}
+
+// Paso 3: Mostrar el resultado
+alert("Criterio según la nota: " + criterio);*/
+/*Ejercicio 18 Escribe un programa que imprima "Es un número menor que 10" si el número
+ingresado es menor que 10, "Es un número entre 10 y 20" si el número
+ingresado está entre 10 y 20, y "Es un número mayor que 20" si el número
+ingresado es mayor que 20.*/
+// Paso 1: Leer el número ingresado por el usuario
+/*let numero = parseInt(prompt("Ingresa un número:"));
+
+// Paso 2: Evaluar el rango del número
+if (numero < 10) {
+    alert("Es un número menor que 10");
+} else if (numero >= 10 && numero <= 20) {
+    alert("Es un número entre 10 y 20");
+} else {
+    alert("Es un número mayor que 20");
+}*/
+/*Ejercicio 20 Escribe un programa que solicite al usuario su género y su edad. Si el usuario
+es de género masculino y tiene más de 18 años, muestra un mensaje que
+indique que es elegible para el servicio militar; en caso contrario, muestra un
+mensaje que diga que no es elegible.*/
+// Paso 1: Solicitar el género y la edad del usuario
+let genero = prompt("Ingresa tu género (masculino/femenino):").toLowerCase();
+let edad = parseInt(prompt("Ingresa tu edad:"));
+
+// Paso 2: Verificar si el usuario es de género masculino y tiene más de 18 años
+if (genero === "masculino" && edad > 18) {
+    alert("Eres elegible para el servicio militar.");
+} else {
+    alert("No eres elegible para el servicio militar.");
+}
+
+
+
