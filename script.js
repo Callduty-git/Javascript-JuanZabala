@@ -260,12 +260,14 @@ switch (dia) {
           default:
             console.log("Hola " + nombre + " eres anciano");
         }*/
-            /*Ejercicio 2 Dada las 3 calificaciones que el estudiante obtuvo en un curso
-            a) Determinar su promedio
-            b) Indicar si el estudiante aprobó o no aprobó el curso.
-            Las notas deben ser de 1 a 10 y aprueba con un promedio mayor de 6*/
-            // Paso 1: Solicitar las calificaciones
-/*let nota1 = parseFloat(prompt("Ingresa la primera calificación (1-10):"));
+
+
+/*Ejercicio 2 Dada las 3 calificaciones que el estudiante obtuvo en un curso
+a) Determinar su promedio
+b) Indicar si el estudiante aprobó o no aprobó el curso.
+Las notas deben ser de 1 a 10 y aprueba con un promedio mayor de 6*/
+// Paso 1: Solicitar las calificaciones
+let nota1 = parseFloat(prompt("Ingresa la primera calificación (1-10):"));
 let nota2 = parseFloat(prompt("Ingresa la segunda calificación (1-10):"));
 let nota3 = parseFloat(prompt("Ingresa la tercera calificación (1-10):"));
 
@@ -277,7 +279,7 @@ let resultado = (promedio > 6) ? "Aprobó" : "No aprobó";
 
 // Paso 4: Mostrar los resultados
 alert("Promedio: " + promedio.toFixed(2));
-alert("Resultado: " + resultado);*/
+alert("Resultado: " + resultado);
 
 /* Ejemplo 4 Leer dos números y los imprima en forma ascendente.*/
     // Paso 1: Leer los dos números
@@ -301,6 +303,7 @@ DIA6 = SABADO
 DIA7 = DOMINGO
 SI se escribe otro número diferentes debe salir el mensaje: ESCRIBIO UN
 NUMERO FUERA DEL RANGO. ESCRIBA UN NÚMERO ENTRE 1 Y 7 */
+
 // Paso 1: Leer el número
 /*let dia = parseInt(prompt("Ingresa un número entre 1 y 7:"));
 
@@ -349,6 +352,7 @@ if (horasTrabajadas <= 40) {
 
 // Paso 3: Mostrar el salario calculado
 alert("El salario semanal del obrero es: $" + salario);*/
+
 /* Ejercicio 10 Hacer un programa que calcule el total a pagar por la compra de camisas. Si
 se compran tres camisas o mas se aplica un descuento del 20% sobre el total
 de la compra y si son menos de tres camisas un descuento del 10%.*/
@@ -478,7 +482,7 @@ es de género masculino y tiene más de 18 años, muestra un mensaje que
 indique que es elegible para el servicio militar; en caso contrario, muestra un
 mensaje que diga que no es elegible.*/
 // Paso 1: Solicitar el género y la edad del usuario
-let genero = prompt("Ingresa tu género (masculino/femenino):").toLowerCase();
+/*let genero = prompt("Ingresa tu género (masculino/femenino):").toLowerCase();
 let edad = parseInt(prompt("Ingresa tu edad:"));
 
 // Paso 2: Verificar si el usuario es de género masculino y tiene más de 18 años
@@ -486,7 +490,31 @@ if (genero === "masculino" && edad > 18) {
     alert("Eres elegible para el servicio militar.");
 } else {
     alert("No eres elegible para el servicio militar.");
-}
-
-
-
+}*/
+/*function cocinarMicroondas(plato, tiempo, potencia) {
+    if (plato === '🐥' && tiempo === 1 && potencia === 5) {
+      return '🍗'
+    }
+  
+    if (plato === '🥚' && tiempo === 2 && potencia === 3) {
+      return '🍳'
+    }
+  
+    return '❌ Plato no soportado'
+  }
+const resultado = cocinarMicroondas('🥚', 2, 3)
+console.log(resultado) */
+/*let dato = prompt ("introduce un numero")
+cuentaAtras(dato)
+function cuentaAtras(numero) {
+    // Condición base: Si el número que recibe es
+    // menor de 0 entonces salimos de la función
+    if (numero < 0) { return }
+  
+    // Si el número era mayor o igual a 0, lo mostramos
+    console.log(numero)
+  
+    // Y llamamos a la función con el número anterior
+    cuentaAtras(numero - 1)
+  }*/ 
+ 
