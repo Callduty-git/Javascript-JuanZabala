@@ -267,7 +267,7 @@ a) Determinar su promedio
 b) Indicar si el estudiante aprobó o no aprobó el curso.
 Las notas deben ser de 1 a 10 y aprueba con un promedio mayor de 6*/
 // Paso 1: Solicitar las calificaciones
-let nota1 = parseFloat(prompt("Ingresa la primera calificación (1-10):"));
+/*let nota1 = parseFloat(prompt("Ingresa la primera calificación (1-10):"));
 let nota2 = parseFloat(prompt("Ingresa la segunda calificación (1-10):"));
 let nota3 = parseFloat(prompt("Ingresa la tercera calificación (1-10):"));
 
@@ -279,7 +279,7 @@ let resultado = (promedio > 6) ? "Aprobó" : "No aprobó";
 
 // Paso 4: Mostrar los resultados
 alert("Promedio: " + promedio.toFixed(2));
-alert("Resultado: " + resultado);
+alert("Resultado: " + resultado);*/
 
 /* Ejemplo 4 Leer dos números y los imprima en forma ascendente.*/
     // Paso 1: Leer los dos números
@@ -492,6 +492,7 @@ if (genero === "masculino" && edad > 18) {
     alert("No eres elegible para el servicio militar.");
 }*/
 /*function cocinarMicroondas(plato, tiempo, potencia) {
+
     if (plato === '🐥' && tiempo === 1 && potencia === 5) {
       return '🍗'
     }
@@ -504,6 +505,14 @@ if (genero === "masculino" && edad > 18) {
   }
 const resultado = cocinarMicroondas('🥚', 2, 3)
 console.log(resultado) */
+/*function sumar (){
+    let num1 = parseInt(prompt ("introduce un numero"))
+    let num2 = parseInt(prompt ("introduce el segundo numero"))
+    return num1 + num2
+}
+alert ("La suma de los dos numeros es: " +(sumar()))
+*/
+
 /*let dato = prompt ("introduce un numero")
 cuentaAtras(dato)
 function cuentaAtras(numero) {
@@ -517,4 +526,20 @@ function cuentaAtras(numero) {
     // Y llamamos a la función con el número anterior
     cuentaAtras(numero - 1)
   }*/ 
- 
+    function getRandomNumber() {
+        // recuperamos un número aleatorio entre 0 y 1
+        const random = Math.random() // por ejemplo: 0.6803487380457318
+      
+        // lo multiplicamos por 10 para que esté entre 0 y 10
+        const multiplied = random * 10 // -> 6.803487380457318
+      
+        // redondeamos hacia abajo para que esté entre 0 y 9
+        const rounded = Math.floor(multiplied) // -> 6
+      
+        // le sumamos uno para que esté entre 1 y 10
+        const result = rounded + 1 // -> 7
+      
+        // devolvemos el resultado
+        return result
+      }
+ alert (getRandomNumber())
