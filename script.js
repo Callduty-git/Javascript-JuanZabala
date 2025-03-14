@@ -190,13 +190,13 @@ do {
     numpersonas++;
 }while (numpersonas < 5)*/
 
-/*for (let i = 10; i >= 0; i--) {
+for (let i = 3; i >= 0; i--) {
     if (i === 0) {
       console.log('¡Despegue 🚀!')
     } else {
       console.log('Faltan ' + i + ' segundos')
     }
-  }*/
+  }
 
  /*let numero = parseInt(prompt("Ingresa un numero"))
  for (let i = 1; i <= 10; i++){
@@ -526,7 +526,7 @@ function cuentaAtras(numero) {
     // Y llamamos a la función con el número anterior
     cuentaAtras(numero - 1)
   }*/ 
-    function getRandomNumber() {
+   /* function getRandomNumber() {
         // recuperamos un número aleatorio entre 0 y 1
         const random = Math.random() // por ejemplo: 0.6803487380457318
       
@@ -542,4 +542,102 @@ function cuentaAtras(numero) {
         // devolvemos el resultado
         return result
       }
- alert (getRandomNumber())
+ alert (getRandomNumber())*/
+ 
+ // 1. Funciones: Las funciones son bloques de código que se pueden reutilizar en diferentes partes del programa.
+
+function calcularPromedio(nota1, nota2, nota3) {
+    // Calculamos el promedio de tres calificaciones
+    let promedio = (nota1 + nota2 + nota3) / 3;
+    return promedio; // La función devuelve el promedio calculado
+}
+
+// Llamamos a la función pasando 3 calificaciones
+let promedioEstudiante = calcularPromedio(8, 7, 9);
+console.log("El promedio es: " + promedioEstudiante);
+
+
+// 2. Arreglos (Arrays): Los arreglos son colecciones ordenadas de valores. Pueden contener diferentes tipos de datos.
+
+let calificaciones = [9, 8, 7, 10, 6]; // Definimos un arreglo de calificaciones
+
+// Accedemos al primer valor del arreglo
+console.log("La primera calificación es: " + calificaciones[0]); // 9
+
+// Iteramos sobre el arreglo y mostramos todas las calificaciones
+for (let i = 0; i < calificaciones.length; i++) {
+    console.log("Calificación " + (i + 1) + ": " + calificaciones[i]);
+}
+
+
+// 3. Programación Orientada a Objetos (OOP): Este paradigma nos permite modelar objetos del mundo real con propiedades y métodos.
+
+class Estudiante {
+    // El constructor define las propiedades iniciales del objeto
+    constructor(nombre, edad, calificaciones) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.calificaciones = calificaciones;
+    }
+
+    // Método para calcular el promedio de las calificaciones del estudiante
+    calcularPromedio() {
+        let suma = this.calificaciones.reduce((acc, curr) => acc + curr, 0);
+        return suma / this.calificaciones.length;
+    }
+}
+
+// Creamos un nuevo objeto "Estudiante"
+let estudiante1 = new Estudiante("Juan", 20, [9, 7, 8, 10]);
+
+// Llamamos al método para calcular el promedio
+console.log(estudiante1.nombre + " tiene un promedio de: " + estudiante1.calcularPromedio());
+
+
+// 4. Manejo de Eventos y el DOM: Permite interactuar con los elementos de la página web y reaccionar ante acciones del usuario.
+
+let boton = document.getElementById("miBoton"); // Accedemos a un elemento del DOM con id "miBoton"
+
+// Función que se ejecuta cuando el botón es presionado
+function saludar() {
+    alert("¡Hola, bienvenido!");
+}
+
+// Asignamos el evento 'click' al botón
+boton.addEventListener("click", saludar);
+
+
+// 5. Módulos: Permiten dividir el código en archivos separados, facilitando su mantenimiento y reutilización.
+
+// **Archivo calculadora.js**
+// Exportamos la función "sumar" desde este archivo
+export function sumar(a, b) {
+    return a + b;
+}
+
+// **Archivo app.js**
+// Importamos la función "sumar" desde calculadora.js
+import { sumar } from './calculadora.js';
+
+// Usamos la función importada
+let resultado = sumar(5, 3);
+console.log("El resultado de la suma es: " + resultado);
+
+
+// 6. Programación Asíncrona: Permite ejecutar tareas de manera no bloqueante, ideal para operaciones como solicitudes HTTP.
+
+function obtenerDatos() {
+    // Simulamos una tarea asíncrona usando una promesa
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Datos obtenidos correctamente");
+        }, 2000); // Esperamos 2 segundos antes de resolver la promesa
+    });
+}
+
+// Llamamos a la función que devuelve una promesa
+obtenerDatos().then(resultado => {
+    console.log(resultado); // "Datos obtenidos correctamente"
+}).catch(error => {
+    console.log("Error:", error);
+});
