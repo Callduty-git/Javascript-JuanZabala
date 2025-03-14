@@ -189,7 +189,7 @@ do {
     }
     numpersonas++;
 }while (numpersonas < 5)*/
-
+/*
 for (let i = 3; i >= 0; i--) {
     if (i === 0) {
       console.log('¡Despegue 🚀!')
@@ -197,7 +197,7 @@ for (let i = 3; i >= 0; i--) {
       console.log('Faltan ' + i + ' segundos')
     }
   }
-
+/*
  /*let numero = parseInt(prompt("Ingresa un numero"))
  for (let i = 1; i <= 10; i++){
     let resultado = numero * i;
@@ -543,9 +543,9 @@ function cuentaAtras(numero) {
         return result
       }
  alert (getRandomNumber())*/
- 
- // 1. Funciones: Las funciones son bloques de código que se pueden reutilizar en diferentes partes del programa.
 
+ // 1. Funciones: Las funciones son bloques de código que se pueden reutilizar en diferentes partes del programa.
+/*
 function calcularPromedio(nota1, nota2, nota3) {
     // Calculamos el promedio de tres calificaciones
     let promedio = (nota1 + nota2 + nota3) / 3;
@@ -554,9 +554,9 @@ function calcularPromedio(nota1, nota2, nota3) {
 
 // Llamamos a la función pasando 3 calificaciones
 let promedioEstudiante = calcularPromedio(8, 7, 9);
-console.log("El promedio es: " + promedioEstudiante);
+console.log("El promedio es: " + promedioEstudiante);*/
 
-
+/*
 // 2. Arreglos (Arrays): Los arreglos son colecciones ordenadas de valores. Pueden contener diferentes tipos de datos.
 
 let calificaciones = [9, 8, 7, 10, 6]; // Definimos un arreglo de calificaciones
@@ -569,7 +569,8 @@ for (let i = 0; i < calificaciones.length; i++) {
     console.log("Calificación " + (i + 1) + ": " + calificaciones[i]);
 }
 
-
+*/
+/*
 // 3. Programación Orientada a Objetos (OOP): Este paradigma nos permite modelar objetos del mundo real con propiedades y métodos.
 
 class Estudiante {
@@ -589,13 +590,15 @@ class Estudiante {
 
 // Creamos un nuevo objeto "Estudiante"
 let estudiante1 = new Estudiante("Juan", 20, [9, 7, 8, 10]);
+let estudiante2 = new Estudiante("pepe", 14, [5, 2, 2, 4]);
 
 // Llamamos al método para calcular el promedio
 console.log(estudiante1.nombre + " tiene un promedio de: " + estudiante1.calcularPromedio());
+console.log(estudiante2.nombre + " tiene un promedio de: " + estudiante2.calcularPromedio());
 
-
+*/
 // 4. Manejo de Eventos y el DOM: Permite interactuar con los elementos de la página web y reaccionar ante acciones del usuario.
-
+/*
 let boton = document.getElementById("miBoton"); // Accedemos a un elemento del DOM con id "miBoton"
 
 // Función que se ejecuta cuando el botón es presionado
@@ -605,25 +608,20 @@ function saludar() {
 
 // Asignamos el evento 'click' al botón
 boton.addEventListener("click", saludar);
-
-
+*/
+/*
 // 5. Módulos: Permiten dividir el código en archivos separados, facilitando su mantenimiento y reutilización.
 
-// **Archivo calculadora.js**
-// Exportamos la función "sumar" desde este archivo
-export function sumar(a, b) {
-    return a + b;
-}
-
-// **Archivo app.js**
 // Importamos la función "sumar" desde calculadora.js
 import { sumar } from './calculadora.js';
 
 // Usamos la función importada
 let resultado = sumar(5, 3);
+
+// Imprimimos el resultado en la consola
 console.log("El resultado de la suma es: " + resultado);
-
-
+*/
+/*
 // 6. Programación Asíncrona: Permite ejecutar tareas de manera no bloqueante, ideal para operaciones como solicitudes HTTP.
 
 function obtenerDatos() {
@@ -640,4 +638,4 @@ obtenerDatos().then(resultado => {
     console.log(resultado); // "Datos obtenidos correctamente"
 }).catch(error => {
     console.log("Error:", error);
-});
+});*/
